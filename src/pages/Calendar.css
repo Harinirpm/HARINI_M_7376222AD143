@@ -1,0 +1,11 @@
+.calendar{
+    padding: 2%;
+}
+.calendar .events{
+    padding: 20px;
+    /* width: 76vw; */
+    height: auto;
+    border:1px solid rgb(237, 237, 237);
+    background-color: rgb(251, 251, 251);
+    border-radius: 4px;
+}

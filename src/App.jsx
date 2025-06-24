@@ -1,9 +1,13 @@
 import './App.css'
-
+import SideNav from './components/SideNav'
+import Calendar from './pages/Calendar'
 function App() {
   return (
     <>
-      <h1>Welcome to calendar app..</h1>
+    <div className='app'>
+      <SideNav />
+      <Calendar />
+      </div>
     </>
   )
 }
