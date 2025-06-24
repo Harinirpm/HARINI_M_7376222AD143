@@ -1,11 +1,87 @@
-.calendar{
-    padding: 2%;
+.calendar-container{
+   margin: 100px;
+   z-index: 1000;
 }
 .calendar .events{
-    padding: 20px;
-    /* width: 76vw; */
+    padding: 10px;
     height: auto;
     border:1px solid rgb(237, 237, 237);
     background-color: rgb(251, 251, 251);
     border-radius: 4px;
 }
+.calendar-container .increment{
+    border: 1px solid rgb(251, 55, 55);
+    border-radius: 50px 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #fecece;
+}
+.calendar-container .decrement{
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 50px 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #f3f3f3;
+}
+.calendar-container {
+  margin: 30px;
+}
+.calendar-container .month-year-filter{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.calendar-container .header{
+    font-size: 28px;
+}
+.calendar-container .header, .month-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.calendar-container .calendar-grid {
+  display: grid;
+  height: 80px;
+  width: 80px;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+  color: #686869;
+}
+.calendar-container .calendar-day-header {
+  font-weight: bold;
+  text-align: center;
+}
+.calendar-container .calendar-day {
+  height: 150px;
+  width: 170px;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid rgb(245, 245, 245);
+  line-height: 60px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.calendar-container .today {
+  background-color:#f9c1c1;
+  color: white;
+  font-weight: bold;
+}
+
+.calendar-container .calendar-day:hover {
+  background-color: #f1f1f1;
+}
+.calendar-container h2{
+    color: #686869;
+}
+
+.calendar-container .selected {
+   background-color: #ff9888;
+  color: white;
+}
+
+
