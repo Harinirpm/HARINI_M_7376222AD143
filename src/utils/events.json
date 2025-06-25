@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "date": "25/06/2025",
+    "startTime": "6:00 am",
+    "endTime": "8:00 am",
+    "color": "#f6be23",
+    "title": "Morning Workout"
+  },
+  {
+    "id": 2,
+    "date": "25/06/2025",
+    "startTime": "7:00 am",
+    "endTime": "11:00 am",
+    "color": "#f6501e",
+    "title": "Team Standup Meeting"
+  },
+  {
+    "id": 3,
+    "date": "25/06/2025",
+    "startTime": "11:00 am",
+    "endTime": "1:00 pm",
+    "color": "#f6be23",
+    "title": "Project Work - Module Integration"
+  },
+  {
+    "id": 4,
+    "date": "26/06/2025",
+    "startTime": "9:00 am",
+    "endTime": "12:00 pm",
+    "color": "#f6be23",
+    "title": "Code Review Session"
+  },
+  {
+    "id": 5,
+    "date": "26/06/2025",
+    "startTime": "11:00 am",
+    "endTime": "12:00 pm",
+    "color": "#f6501e",
+    "title": "Research New Features"
+  }
+]

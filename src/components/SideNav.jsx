@@ -6,64 +6,12 @@ import AccessAlarmsIcon from "@mui/icons-material/AccessAlarms";
 import { Chip } from "@mui/material";
 import dayjs from "dayjs";
 import Brightness1Icon from '@mui/icons-material/Brightness1';
-const schedules = [
-  {
-    id: 1,
-    date: "25/06/2025",
-    startTime: "6:00 am",
-    endTime: "7:00 am",
-    color: "#f6be23",
-    title: "Morning Workout",
-  },
-  {
-    id: 2,
-    date: "25/06/2025",
-    startTime: "10:00 am",
-    endTime: "11:00 am",
-    color: "#f6501e",
-    title: "Team Standup Meeting",
-  },
-  {
-    id: 3,
-    date: "25/06/2025",
-    startTime: "11:00 am",
-    endTime: "1:00 pm",
-    color: "#f6be23",
-    title: "Project Work - Module Integration",
-  },
-  {
-    id: 6,
-    date: "26/06/2025",
-    startTime: "9:00 am",
-    endTime: "12:00 am",
-    color: "#f6be23",
-    title: "Code Review Session",
-  },
-  {
-    id: 7,
-    date: "26/06/2025",
-    startTime: "11:00 am",
-    endTime: "12:00 pm",
-   color: "#f6501e",
-    title: "Research New Features",
-  },
-  {
-    id: 8,
-    date: "26/06/2025",
-    startTime: "2:00 pm",
-    endTime: "3:30 pm",
-    color: "#f6be23",
-    title: "Team Collaboration - UI Improvements",
-  },
-];
+import schedules from '../utils/events.json';
 
 function SideNav({ selectedDate }) {
-  // const today = dayjs();
   const todayFormatted = selectedDate.format("DD/MM/YYYY");
   const tomorrow = selectedDate.add(1, "day");
   const tomorrowFormatted = tomorrow.format("DD/MM/YYYY");
-  // const isBefore = todayFormatted.isBefore(tomorrow);
-
   const todaySchedules = schedules.filter((s) => s.date === todayFormatted);
   const tomorrowSchedules = schedules.filter(
     (s) => s.date === tomorrowFormatted
