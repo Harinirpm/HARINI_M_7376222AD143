@@ -32,7 +32,7 @@ const schedules = [
     title: "Project Work - Module Integration",
   },
   {
-    id: 6,
+    id: 4,
     date: "26/06/2025",
     startTime: "9:00 am",
     endTime: "12:00 am",
@@ -40,21 +40,14 @@ const schedules = [
     title: "Code Review Session",
   },
   {
-    id: 7,
+    id: 5,
     date: "26/06/2025",
     startTime: "11:00 am",
     endTime: "12:00 pm",
     color: "#f6501e",
     title: "Research New Features",
   },
-  {
-    id: 8,
-    date: "26/06/2025",
-    startTime: "2:00 pm",
-    endTime: "3:30 pm",
-    color: "#f6be23",
-    title: "Team Collaboration - UI Improvements",
-  },
+ 
 ];
 
 
@@ -140,7 +133,7 @@ function Calendar({ onDateSelect }) {
         )}
       </div>
       <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", paddingLeft: "5px", marginTop: "2px" }}>
-        {daySchedules.slice(0, 2).map((sch, i) => (
+        {daySchedules.slice(0, 3).map((sch, i) => (
           <div
             key={i}
             style={{
